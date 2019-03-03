@@ -1,0 +1,197 @@
+/*head*/
+.heads{
+    background-color: #f7f7f7;
+    overflow: hidden;
+    margin-bottom:75px;
+}
+.section-header-sub{
+    width:940px;
+    margin: 50px auto 40px auto;
+    text-align: center;
+    position: relative;
+}
+.section-header-sub span{
+    font: normal 400 36px/50px "SimSun", serif;
+    color:#666;
+}
+.section-header-sub span::before{
+    content:'';
+    width: 340px;
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+    left:40px;
+    top: 25px;
+}
+.section-header-sub span::after{
+    content:'';
+    width: 340px;
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+    right:40px;
+    top: 25px;
+}
+  /*导航栏*/
+.str-nav{
+    position:fixed;
+    background:#f7f7f7;
+    width:100%;
+    top:0;
+    z-index: 100;
+}
+.str-nav-warp{
+    width:940px;
+    height:60px;
+    line-height:60px;
+    margin:0 auto;
+}
+.str-nav-warp li{
+    display:inline-block;
+}
+.str-nav-warp li a{
+    color:#666;
+}
+.mg{
+    margin-left:60px;
+}
+.mgr{
+    float: right;
+    color:#aaa;
+}
+.change{
+    color:#c00 !important;
+}
+/*主体*/
+.car-wrapper{
+    margin-top:30px;
+    width:940px;
+    margin:0 auto;
+}
+/*轿车*/
+.carf-tit{
+    visibility: visible;
+    font: normal 400 20px/24px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", "SimHei", Helvetica, Arial, serif;
+    text-align: center;
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+} 
+#car-wr::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*轿车第一列*/
+.grid-item{
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    width: 26%;
+    height: 280px;
+    padding: 20px;
+    cursor: pointer;
+}
+.grid-item:hover{
+    box-shadow:0 0 5px #ccc;
+}
+.tras{
+    transform:rotate(-180deg);
+}
+.add{
+    display:inline-block;
+    box-shadow:0 0 5px #ccc;
+}
+.carf-img{
+    width: 100%;
+}
+.car-txt{
+    font: normal 400 20px/32px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", "SimHei", Helvetica, Arial, serif;
+    font-weight: 600;
+    margin-top: 20px;
+    color:#333;
+}
+.car-txt2{
+    font: normal 400 20px/32px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", "SimHei", Helvetica, Arial, serif;
+    font-weight: 600;
+    color:#333;
+}
+.car-txt2{
+    font: normal 400 20px/32px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", "SimHei", Helvetica, Arial, serif;
+    font-weight: 600;
+    color:#333;
+}
+.car-detail{
+    color: #666;
+    margin-top: 10px;
+}
+/*隐藏部分*/
+.all-vechies{
+    position: absolute;
+    top: 76%;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.all-vechies-grid{
+    border-bottom: 1px solid #ccc;
+}
+.all-vechies-grida{
+    font: normal 500 16px/52px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", "SimHei", Helvetica, Arial, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #333;
+    padding: 0 20px;
+    position: relative;
+    display: block;
+}
+.all-vechies-gridas{
+    font-weight: 600;
+}
+.all-vechies-grida:hover{
+    background:#00ADEF;
+    color:#fff;
+}
+.all-vechies-grida:hover span{
+    color:#fff;
+}
+.all-vechies-grida>span{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #00ADEF;
+}
+.all-vechies-list{
+    padding:0 20px;
+    display: none;
+}
+/*车型规格*/
+.car-modal{
+    color:#666;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.car-modal>a{
+    color:#666;
+}
+.car-modal-price{
+    float:right;
+}
+
+/*底部文字*/
+.amg-footer{
+    background:#fff;
+    padding-top:80px;
+    height:300px;
+}
+.amg-footer-m>p{
+    color:#000;
+}

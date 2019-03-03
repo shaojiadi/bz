@@ -1,0 +1,383 @@
+*{
+    margin:0;
+	  padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+/* 导航栏 */
+.navheader{
+    height: 108px;
+    width: 100%;
+    background: #000;
+  }
+  .nav-top{
+    width: 940px;
+    height: 108px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position:relative;
+  }
+  .nav-logo{
+    width: 259px;
+    height: 64px;
+  }
+  .nav-logo img{
+    width: 259px;
+    height: 64px;
+  }
+  .nav-li{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .nav-top a{
+    text-decoration:none;
+    color:#fff;
+  }
+  .navuser li{
+    display: inline-block;
+    color:#fff;
+    font-size:12px;
+  }
+  .navlogin{
+    position: absolute;
+    right:24px;
+    top:20%;
+  }
+  .navlogins{
+    position: absolute;
+    right:24px;
+    top:20%;
+    display:none;
+  }
+  .active{
+    display: block;
+  }
+  .tx{
+    width:15px;
+    height:15px;
+  }
+  .navuser a:hover{
+    color:#00ADEF;
+  }
+  .navul a:hover{
+    color:#00ADEF;
+  }
+  .search-img{
+    width:20px;
+    height:20px;
+    margin-top:5px;
+  }
+  .navfoot{
+    height: 60px;
+    width: 100%;
+    background: #000;
+    display: none;
+  }
+  .nav-foot{
+    width: 940px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .nav-foot-ser{
+    display: flex;
+    position: absolute;
+    right:0;
+  }
+  .nav-foot-i1{
+    width:26px;
+    height:26px;
+    border:1px solid #fff;
+    border-right:none;
+  }
+  .nav-foot-i2{
+    width:26px;
+    height:26px;
+    border:0.5px solid #fff;
+    background:#aaa
+  }
+  .nav-ser{
+    width:200px;
+    height:26px;
+    border:1px solid #fff;
+    color:#fff;
+    background: #000;
+    margin-right:10px;
+  }
+  .out{
+    color:#fff;
+    font-size:10px;
+    position: relative;
+    right:-70PX;
+    top:-17px;
+    display: block;
+    display: none;
+  }
+
+  /* 底部 */
+.footer{
+    width:100%;
+    background: #000;
+    color: #fff;
+  }
+  .footer-top ul li{
+    margin-top:23px;
+  }
+  .footer a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-top{
+    width:940px;
+    height:350px;
+    display:flex;
+    justify-content: space-between;
+    font-size:15px;
+    margin:0 auto;
+    padding-top:10px;
+    border-bottom:1px dashed #222;
+  }
+  
+  .footer-top-size{
+    font-size:20px;
+    font-weight: border;
+  }
+  
+  .footer-middle{
+    width:940px;
+    height:70px;
+    margin:0 auto;
+    display: flex;
+    align-items:center; 
+  }
+  .footer-middle-m{
+    width:100%;
+    display:flex;
+   }
+   .footer-middle-m h3{
+     margin-top:5px;
+   }
+   .footer-middle-image1,.footer-middle-image2,.footer-middle-image3{
+     width:35px;
+     height:35px;
+     background:#aaa;
+     border-radius: 50%;
+  }
+  .footer-middle-image1{
+    margin-left:50px;
+  }
+  .footer-middle-image2,.footer-middle-image3{
+    margin-left: 15px;
+  }
+  .footer-middle-image1:hover{
+    transform: scale(1.1);
+  }
+  .footer-middle-image2:hover{
+    transform: scale(1.1);
+  }
+  .footer-middle-image3:hover{
+    transform: scale(1.1);
+  }
+  .footer-bottom{
+    width:100%;
+    height:50px;
+    background:#222;
+  }
+  .footer-bottom-m{
+    width:940px;
+    height:50px;
+    margin:0 auto;
+    display: flex;
+    align-items:center; 
+  }
+  .footer-bottom-m ul{
+    display:flex;
+    font-size:13px;
+  }
+  .fots{
+    margin-left:30px;
+  }
+  .footer-top a:hover,.footer-bottom-m a:hover{
+    color:#00ADEF;
+  }
+
+  /* 分享到 */
+.enjoy-m{
+  width:940px;
+  height:150px;
+  margin:0 auto;
+}
+.enjoy-m img{
+  width:30px;
+  height:30px;
+}
+.enjoy-section{
+  float:right;
+  margin-right:25px;
+  font-size:21px;
+  font-weight:400;
+  margin-top:6%;
+}
+.amg-enjoy{
+  color:#fff;
+}
+
+/* 轮播图 */
+.brand_container{
+  width: 1500px;
+  height: 550px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+.brand_container .brand_content{
+  position: absolute;
+  width: 1300px;
+  height: 550px;
+  left:7%;
+}
+.brand_container .brand_content li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 550px;
+  transition: all 0.5s ease;
+}
+.brand_container .brand_content  li img{
+  width:100%;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.brand_container .btn_left, .brand_container .btn_right{
+ display:none;
+  width: 80px;
+  height: 100px;
+  top: 210px;
+  z-index: 50;
+}
+.brand_container .btn_left{
+  position: absolute;
+  left: 0;
+}
+.brand_container .btn_right{
+  position: absolute;
+  right: 0;
+}
+.brand_container .buttons{
+  position: absolute;
+  bottom: 10px;
+  left: 42%;
+  z-index: 80;
+}
+.brand_container .buttons a{
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius:50%;
+  background-color: #898F94;
+  margin-right: 38px;
+}
+.brand_container .buttons a.color{
+  background-color: #0aa1ed;
+}
+.p1 {
+  transform: translate3d(-577px, 0, 0) scale(0.81);
+  opacity: 0.4;
+  z-index: 1;
+  position: relative;
+}
+
+.p2 {
+  transform: translate3d(-325px, 0, 0) scale(0.81);
+  transform-origin: 0 50%;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.p3 {
+  transform: translate3d(-125px, 0, 0) scale(0.81);
+  transform-origin: 0 50%;
+  opacity: 0.8;
+  z-index: 3;
+  position: relative;
+}
+
+.p4 {
+  transform: translate3d(0px, 0, 0) scale(1);
+  opacity: 1;
+  z-index: 4;
+  position: relative;
+}
+
+.p5 {
+  transform: translate3d(200px, 0, 0) scale(0.81);
+  transform-origin: 0 50%;
+  opacity: 0.8;
+  z-index: 3;
+  position: relative;
+}
+
+.p6 {
+  transform: translate3d(425px, 0, 0) scale(0.81);
+  transform-origin: 0 50%;
+  opacity: 0.6;
+  z-index: 2;
+  position: relative;
+}
+/*轮播图内容*/
+.carsouel-inner{
+  position: absolute;
+  text-align: center;
+  top:5%;
+  left:30%;
+  color:#fff;
+  width:500px;
+  text-shadow:0 0 5px #aaa;
+}
+.carsouel-inner>a{
+  color:#fff;
+}
+.more-less{
+  display:block;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #c00;
+  text-align: center;
+  border-radius: 2px;
+}
+.carsouel-tra{
+  font: normal 400 35px/1.5 "SimSun",serif;
+  margin-bottom:20px;
+}
+.details{
+  margin:20px auto;
+}
+.carsouel-tit{
+  font-size:20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*底部文字*/
+.amg-footer{
+  padding-top:100px;
+  width:100%;
+  height:400px;
+  background: #000;
+}
+.amg-footer-m{
+  width:940px;
+  margin:0 auto;
+  font-size:14px;
+}
+.amg-footer-m>P{
+  color:#c7c7c7;
+  margin-top:10px;
+}

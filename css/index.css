@@ -1,0 +1,370 @@
+*{
+	margin:0;
+	padding:0;
+  list-style:none;
+  box-sizing:border-box;
+  text-decoration: none;
+}
+.change{
+  color:#0aa1ed !important;
+}
+/*标题*/
+.line h3{
+  width:940px;
+  margin:50px auto;
+  margin-top:60px;
+  text-align: center;
+  position: relative;
+}
+.line h3 span{
+  font: normal 400 36px/50px "SimSun",serif;
+  color:#666;
+}
+.line h3 span::before{
+  content:'';
+  width: 340px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  left:0;
+  z-index: 1;
+  top: 25px;
+}
+.line h3 span::after{
+  content:'';
+  width: 340px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  right:0;
+  z-index: 1;
+  top: 25px;
+}
+
+/* 购车工具 */
+.car-tool{
+  width:940px;
+  height:170px;
+  margin:0 auto;
+  display: flex;
+  justify-content:space-around;
+}
+.car-tool p a{
+  font-weight:bolder;
+  font-size:20px;
+  color:#333;
+  text-decoration: none;
+}
+.car-tool p{
+  margin-top:35px;
+}
+.car-tool img{
+  width:60px;
+  height:60px;
+}
+/* button */
+#bg{
+  width:90px;
+  position:fixed;
+  right:0;
+  top:50%;
+  display:none;
+  text-decoration: none;
+  z-index:10;
+}
+#bg>img{
+  width:100px;
+}
+#bg>p{
+  font-size:20px;
+  font-weight:bolder;
+  color:#333;
+  display:none;
+}
+#bg:hover p{
+  display: block;
+  background:rgba(0,0,0,0.4);
+}
+/* 全部车型 */
+.type{
+  width:940px;
+  height:400px;
+  margin:0 auto;
+  position:relative;
+}
+.type ul{
+  position: absolute;
+  top:0px;
+  width:100%;
+  height:100%;
+}
+
+.typeli{
+  position:relative;
+  width: 25%;
+  float: left;
+  border-right: 1px solid #fff;
+  height: 100%;
+}
+.typeli img{
+  height:30px;
+   width:30px;
+   margin-left:8px;
+}
+
+.typeone{
+  margin-left:5px;
+  font-size:18px;
+}
+
+.type a{
+  text-decoration:none;
+  color:#fff;
+}
+.typeli:hover div{
+  transform: translateY(-10px)
+}
+.typeli:hover{
+  background:rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.typeli div{
+  width:50px;
+  height:70px;
+  position: absolute;
+  left:40%;
+  top:70%;
+  color:#fff;
+}
+
+#type-d3{
+  width:95px;
+  height:108px;
+  margin:-20px;
+  margin-top:0px;
+}
+#type-d3 img{
+  margin-left:24px;
+}
+/* 更多发现 */
+.promo-panel{
+  margin-bottom:10px;
+  width:100%;
+}
+.promo-panels{
+  width:100%;
+  height:294px;
+}
+.promo-panel-to{
+  width:940px;
+  margin:0 auto;
+  position: relative;
+}
+.promo-panel-to2,.promo-panel-to3,.promo-panel-to4{
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.promo-image{
+  width:940px;
+}
+.promo-image2{
+  width:608px;
+  height:300px;
+}
+.promo-image3{
+  width:315px;
+  height:300px;
+}
+.by-car-menu{
+  position: absolute;
+  left:50px;
+  top:102px;
+  color:#fff;
+}
+.by-car-p1{
+  font: normal 400 36px/1 "SimSun",serif;
+}
+.promo-panel-to:hover{
+  cursor: pointer;
+}
+.by-car-p2{
+  margin-top:7px;
+}
+.by-car-p4{
+  margin-top:15px;
+}
+#know{
+  color:#fff;
+}
+.by-car-d1,.start-text-d2{
+  display:none;
+}
+.genden-text-d2{
+  display:none;
+}
+.genden{
+  position: relative;
+  width:608px;
+  float:left;
+}
+.gendenText{
+  position: absolute;
+  left:50px;
+  top:102px;
+  color:#fff;
+}
+.star{
+  position: relative;
+  width:315px;
+  float:right;
+}
+.start-text{
+  position: absolute;
+  width:200px;
+  right:14px;
+  top:92px;;
+  color:#fff;
+}
+/*奔驰新闻*/
+.bz_news{
+  width:100%;
+  margin-top:50px;
+  margin-bottom:30px;
+}
+.bz_news>h3{
+  font:normal 400 36px/50px "SimSun", serif;
+  width:940px;
+  text-align: center;
+  color: #666;
+  margin: 0 auto;
+}
+.bz_news_head{
+  background:#ddd;
+}
+.bz_news_catainer{
+  background:#f8f8f8;
+  width:100%;
+  height:900px;
+  display: none;
+}
+.bz_news_catainer2{
+  background:#f8f8f8;
+  width:100%;
+  height:500px;
+  display:none;
+}
+.bz_news_nav{
+  width:940px;
+  height:60px;
+  line-height: 60px;
+  margin:0 auto;
+  display: flex;
+  letter-spacing: 0.3px;
+  font-size:14px;
+}
+.bz_news_nav a{
+  color:#666;
+}
+.bz_news_nitem{
+  margin-left:45px;
+}
+.bz_news_li2{
+  margin-left:20px;
+}
+.bz_news_body{
+  width:940px;
+  height:100%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.bz_news_body>p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #666;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top:30px;
+  height: 55px;
+}
+.active{
+  display: block;
+}
+.bz_news_item{
+  display: flex;
+}
+.bz_news_item>li{
+  width:300px;
+}
+.bz_news_pc{
+  width:300px;
+  height:150px;
+}
+.bz_news-txt{
+  margin-top:10px;
+  padding:5px;
+}
+.bz_news-txt>a{
+  font-size: 12px;
+  color: #666;
+}
+.bz_new-detail{
+  margin-left:185px;
+}
+.bz_new-details{
+  margin-left:149px;
+}
+.bz_news-txt1{
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  clear: both;
+  padding:5px;
+  margin-top:5px;
+}
+.bz_news-txt2{
+    font-size: 14px;
+    padding:5px;
+    color: #666;
+}
+/* 预约试驾 */
+.make-drive{
+  margin-top:60px;
+  width:100%;
+  position:relative;
+}
+.make-drive img{
+  width:100%;
+}
+.make-drive-sections{
+  position:absolute;
+  left:19%;
+  top:25%;
+  width:300px;
+  height:165px;
+  padding:20px 36px;
+  background:rgba(255,255,255,0.8);
+}
+.make-drive-p{
+  margin-bottom:20px;
+  font-weight:normal;
+  color:#333;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:30px;
+}
+.make-drive-p2{
+  font-weight:300;
+  margin-bottom:20px;
+}
+.make-drive-sections a{
+  text-decoration:none;
+  color:#333;
+  font-size:15px;
+}
+.make-drive-sections a:hover{
+  color:red;
+}

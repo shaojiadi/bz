@@ -1,0 +1,215 @@
+*{margin:0;padding:0;}
+.big-image{
+    width:100%;
+    display:block;
+}
+.back{
+    width:100%;
+    height:50px;
+    background: #222;
+}
+.big-image2{
+    width:100px;
+    margin:15px;
+    margin-left:50px;
+}
+/*电梯*/
+#toTop{
+    position:fixed;
+    top:400px;
+    left:10px;
+    z-index:1000;
+  }
+  #toTop button{
+    width:81px;
+    display: block;  
+    padding:5px;
+    border-radius:5px;
+    color:#fff;
+  }
+  .totop0{
+    background:rgba(0,0,0,0.3);
+  }
+  .totop{
+    background:#c00;
+  }
+/*传承与进化*/
+.inherit{
+    width:100%;
+    background: #000;
+    color:#c7c7c7;
+    font-family:"SimSun",serif;
+}
+.inherit-top{
+    width:100%;
+    height:150px;
+    overflow: hidden;
+}
+.inherit-top-m{
+    width:350px;
+    height:60px;
+    line-height:60px;
+    margin:50px auto;
+    border:1px dashed #c00;
+}
+.title{
+    text-align: center;
+    font-style: italic;
+    font-size:30px;
+    color:#fff;
+}
+
+.innerit-b{
+    width:940px;
+    margin:0 auto;
+    display:flex;
+}
+
+.innerit-b2{
+    width:40%;
+    margin-left:6%;
+    margin-top:60px;
+}
+.innerit-h{
+    margin-bottom:24px;
+}
+.innerit-p{
+    font:normal 400 15px/1.75 "PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei","SimHei",Helvetica,Arial,serif;
+}
+.innerit-b3{
+    width:40%;
+    margin-top:70px;
+}
+.innerit-img-group{
+  margin-left:104px;
+}
+.outstanding img{
+    width:100%;
+}
+
+/* 车型规格 */
+.module-section{
+    background:#18181d;
+    width:100%;
+    height:300px;
+}
+.module-section-item{
+    width:940px;
+    margin:0 auto;
+    padding:50px 0;
+}
+.module-section-itemtop{
+    line-height:36px;
+    margin-bottom:36px;
+    width:100%;
+    font-size:18px;
+    margin-top:30px;
+}
+
+.module-section-itemtop2{
+    margin-left: 8%;
+}
+.module-section-item img{
+    width:220px;
+    height:90px;
+}
+.module-section-item ul{
+    display: flex;
+}
+.module-section-m{
+    padding-left:30px;
+    padding-bottom: 5px;
+    width: 16%;
+    height: 96px;
+    border-left: 1px solid #ccc;
+}
+.module-section-m2{
+    width:21%;
+}
+.module-section-m3{
+    width:30%;
+}
+.module-section-item ul p{
+    font-size:14px;
+    margin-top:8px;
+}
+.module-section-right{
+    width:110px;
+    height:96px;
+    float: right;
+}
+.module-section-right_p1{
+    display:inline-block;
+    border-radius: 1px;
+    font-size: 14px;
+    background-color: #c00;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.module-section-right_p2{
+    background-color: rgba(0,0,0);
+    border: 1px #979797 solid;
+    color:#c7c7c7;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.module-section2{
+    width:100%;
+    height:300px;
+}
+
+/* 图片与视频 */
+.picture-video{
+    width:940px;
+    margin:0 auto;
+}
+.pv-sel{
+    display: flex;
+    justify-content: space-around;
+    border-bottom:1px solid #c7c7c7;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.pv-menu{
+    padding-bottom: 15px;
+    width:160px;
+    text-align: center;
+}
+.pv-menu>a:hover{
+    color:#c00;
+}
+.gallery{
+    width:940px;
+    margin-bottom:15px;
+}
+.gallery-s{
+    width:460px;
+}
+.gallery-r{
+    float: right;
+}
+/* 相关内容 */
+.amg-about{
+    margin:0 auto;
+    width:940px;
+    display:flex;
+    justify-content: space-between;
+}
+.amg-new-img{
+    width:300px;
+}
+.amg-new-img:hover{
+    transform: scale(1.2);
+}
+.amg-abous>a:active{
+    color:#c00;
+}
+.amg-abous{
+    margin-top:20px;
+}

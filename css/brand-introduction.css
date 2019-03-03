@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+#head-intro{
+    position: relative;
+}
+.introduce{
+    display: block;
+    width:100%;
+}
+.introduce-txt{
+    position:absolute;
+    left:46%;
+    top:13%;
+    height: 63px;
+    width: 138px;
+}
+/* 导航 */
+.nav{
+    width:100%;
+    height:60px;
+    line-height:60px;
+    border-bottom:1px solid #aaa;
+    margin-bottom:50px;
+    background:rgb(58, 52, 52);
+}
+.fix{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:60px;
+    line-height:60px;
+    border-bottom:1px solid #aaa;
+    margin-bottom:50px;
+    background:rgb(58, 52, 52);
+    z-index: 100;
+}
+.nav-m,.nav-m ul{
+    width:940px;
+    height:100%;
+    margin:0 auto;
+}
+
+.nav-m ul{
+    text-align: center;
+}
+.nav-m ul li{
+    display:inline-block;
+    padding:0 30px;
+}
+.nav-m ul a{
+    color:#fff;
+    font-weight:200;
+}
+.nav-m ul li:hover{
+    border-bottom:3px solid #0aa1ed;
+    cursor: pointer;
+}
+.change{
+    border-bottom:3px solid #0aa1ed;
+}
+/* 梅塞德斯-奔驰 */
+.merceds{
+    width:100%;
+}
+.merceds-head{
+    width:100%;
+    height:312px;
+    overflow: hidden;
+}
+.merceds-head h3{
+    width:940px;
+    margin:50px auto;
+    margin-top:60px;
+    text-align: center;
+    position: relative;
+}
+.merceds-head h3 span{
+    font: normal 400 36px/50px "SimSun",serif;
+    color:#666;
+}
+.merceds-head h3 span::before{
+    content:'';
+    width: 340px;
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+    left:0;
+    z-index: 1;
+    top: 25px;
+}
+.merceds-head h3 span::after{
+    content:'';
+    width: 340px;
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+    right:0;
+    z-index: 1;
+    top: 25px;
+}
+.merceds-section{
+    width:940px;
+    margin:0 auto;
+    margin-bottom:50px;
+    color:#333;
+}
+.merceds-section p{
+    text-align: center;
+    font-size:16px;
+}
+.merceds-img{
+    width:100%;
+    display: block;
+}
+/* 瞰思未来 C.A.S.E  */
+.merceds-heads{
+    height:256px;
+}
+/*c*/
+.case{
+    position: relative;
+}
+.case-img , .case{
+    width:100%;
+    height:650px;
+}
+
+.response-img{
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    left:200px;
+    top: 70px;
+}
+.case-section-heighter{
+    position:absolute;
+    top: 200px;
+    left: 410px;
+}
+.section-heighter-p1{
+    font-size: 30px;
+    color: #aaa;
+}
+.section-heighter-p2{
+    font-size:20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.swiper-slide{
+    width: 600px;
+    position: absolute;
+    top: 250px;
+    right: 200px;
+}
+.swiper-img{
+    width: 220px;
+    height: 220px;
+}
+.case-section{
+    width:250px;
+    height:105px;
+    font-size: 16px;
+    letter-spacing:0.5px;
+    line-height: 2;
+    margin-top:20px;
+    color:#fff;
+}
+.swiper{
+    display: inline-block;
+    margin-right:37px;
+}
+.swipers{
+    position:absolute;
+    top:-165px;
+}
+/*a*/
+.response-img2{
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    right:290px;
+    top: 26px;
+}
+.case-section-heighters{
+    position:absolute;
+    top: 220px;
+    right:228px;
+    color:#fff;
+}
+.section-heighters-p1{
+    font-size: 30px;
+}
+.section-heighters-p2{
+    font-size:20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.swiper-slides{
+    width: 800px;
+    margin-right: 37px;
+    position: absolute;
+    top: 268px;
+    right: 430px;
+    display: flex;
+}
+.swipper-slides-p{
+    color:#000;
+}
+.swiper-middle{
+    position: relative;
+    top:-170px;
+}
+/* e */
+#swiper-slidee{
+    color:#fff;
+    width: 800px;
+    margin-right: 37px;
+    position: absolute;
+    top: 268px;
+    right: 370px;
+    display: flex;
+}
+/*心所向 驰以恒*/
+.float{
+    margin-top:120px;
+    position: relative;
+}
+.text-bg{
+    position: absolute;
+    text-align:left;
+    left:200px;
+    top:170px;
+    width:347px;
+}
+.text-bg1{
+    padding-top: 35px;
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: #666;
+    font-size:24px;
+}
+.text-bg2{
+    letter-spacing:0.5px;
+    color:#333;
+    line-height:2;
+}

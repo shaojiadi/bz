@@ -1,0 +1,108 @@
+*{margin:0;padding:0;list-style:none;text-decoration: none;}
+
+.wrapper{
+  background:url('http://127.0.0.1:3000/timg (3).jpg')no-repeat bottom;
+  background-size:cover;
+  height:750px;
+  overflow: hidden;
+}
+
+#wrapper-inner{
+  width:880px;
+  height:87%;
+  background:#000;
+  margin:0 auto;
+  overflow: hidden;
+  border:1px solid #fff;
+  margin-top:4%;
+}
+/*head*/
+.line h3{
+  width:880px;
+  margin:50px auto;
+  text-align: center;
+  position: relative;
+}
+.line h3 span{
+  font: normal 400 36px/50px "SimSun",serif;
+  color:#fff;
+}
+.line h3 span::before{
+  content:'';
+  width: 340px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  left:50px;
+  z-index: 1;
+  top: 25px;
+}
+.line h3 span::after{
+  content:'';
+  width: 340px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  right:50px;
+  z-index: 1;
+  top: 25px;
+}
+/*输入用户名*/
+.user{
+  width: 388px;
+  border: 1px solid #ddd;
+  color: #aaa;
+  font-size: 14px;
+  padding: 10px;
+  height: 18px;
+  border-radius: 4px;
+  margin:0 auto;
+  margin-left:240px;
+}
+.pwd{
+  margin-top:50px;
+}
+.login{
+  width: 409px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  height: 39px;
+  border-radius: 4px;
+  display: block;
+  margin:0 auto;
+  background:#0090c7;
+  border:0;
+  cursor: pointer;
+}
+.txt{
+  color: #fff;
+  margin-top:25px;
+  position: relative;
+}
+.remember-pwd{
+  width:20px;
+  height:20px;
+  margin-left:240px;
+  display: inline-block;
+  position: absolute;
+  bottom:0px;
+}
+.txt>span{
+  margin-left:266px;
+}
+.forget-pwd{
+  margin-left:240px;
+  color:#0aa1ed;
+}
+.logo{
+  width:200px;
+  height:125px;
+  display: block;
+  margin:50px auto;
+}
+
+.tian{
+  color:#f00;
+  margin-left:10px;
+}

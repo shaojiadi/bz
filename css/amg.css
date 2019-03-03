@@ -1,0 +1,397 @@
+*{margin:0;padding:0}
+.heroBanner_sup{
+    width:100%;
+    display:block;
+    height:800px;
+}
+.heroBanner_sub{
+    width:102%;
+    display:block;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.img-left{
+    display:block;
+    width:50%;
+    height:600px;
+}
+.more{
+    display:block;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #c00;
+    color: #fff;
+    margin:0 auto;
+    text-align: center;
+    border-radius: 2px;
+}
+.change{
+    color:#c00 !important;
+}
+.hide{
+    width:100px;
+    height:60px;
+}
+/* 导航 */
+.nav{
+    width:100%;
+    height:60px;
+    line-height:60px;
+    background:#000;
+    width:100%;
+}
+.fix{
+    position:fixed;
+    top:0;
+    z-index: 100;
+    width:100%;
+    height:60px;
+    background:#000;
+    line-height:60px;
+}
+.nav-m,.nav-m ul{
+    width:940px;
+    height:100%;
+    margin:0 auto;
+}
+.nav-m ul{
+    list-style: none;
+    text-align: center;
+}
+.nav-m ul li{
+    display:inline-block;
+    padding:0 20px;
+}
+
+.nav-m ul a:hover{
+    color:#f00;
+    cursor: pointer;
+}
+/*第一个视频*/
+.section-header__video{
+    width:100%;
+    display:block;
+}
+/*AMG车型*/
+.color-txt{
+    border-bottom:2px solid #f00;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:350px;
+}
+.amg-data{
+    background: #000;
+    color:#fff;
+}
+.amg-data-header{
+    width:100%;
+    height:115px;
+}
+.section-header__subtitle{
+    width:940px;
+    margin:0 auto;
+    padding-top:55px;
+    text-align: center;
+    font-size:30px;
+}
+.menu-car-list{
+    display:flex;
+    justify-content:center;
+    padding: 20px 0;
+    width:940px;
+    margin:0 auto;
+}
+.menu-car-l1{
+    padding:5px;
+    margin-right:50px;
+    color:#fff;
+    cursor: pointer;
+}
+.menu-car-titleS{
+    margin-bottom:12px;
+}
+#container>ul.show{display:block;}
+.menu-car-list2{
+    position: absolute;
+    left:24%;
+    margin-top:20px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+#container>ul{
+    display:none;
+}
+.menu-car-li1{
+    width:210px;
+    margin-right:21px;
+    height:315px;
+    display: inline-block;
+    overflow: hidden;
+    color:#fff;
+}
+.menu-car-li2{
+    height:500px;
+}
+.s-image{
+    width:200px;
+    height: 87px;
+}
+.menu-car-s{
+    font: normal 400 36px/1 "SimSun",serif;
+}
+.menu-car-text{
+  padding-top:16px;
+}
+.menu-ct-p2{
+    margin-top:20px;
+}
+.menu-ct-p3{
+  margin-top:10px;
+  font-size:11px;
+}
+
+/* 关于amg*/
+.section-header{
+    width:100%;
+    background: #000;
+}
+.section-header-title{
+    width:940px;
+    height:130px;
+    margin:0 auto;
+    color:#fff;
+    text-align: center;
+}
+.section-header-title>p{
+    padding-top:55px;
+    font-size:32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-amg{
+    position:relative;
+}
+.about-amg-bk{
+    width:100%;
+    background:#000;
+    height:600px;
+}
+.about-amg-bg{
+    width:100%;
+}
+.about-amg-bimg{
+    float:right;
+    height:600px;
+    width:50%;
+}
+
+.warapper{
+    position: absolute;
+    width:940px;
+    height:100%;
+    top:0%;
+    left:290px;
+}
+.wrapper-txt{
+    margin-top:155px;
+    width:400px;
+    height:185px;
+    color:#fff;
+}
+.wrapper-txt>h1{
+    margin-bottom:18px;
+    font: normal 400 36px/1.89 "SimSun",serif;
+}
+.font-base{
+    font: normal 400 16px/1.89 "SimSun",serif;
+}
+
+.about-amg-con{
+    position:relative;
+}
+.menu-select{
+    position: absolute;
+    display:flex;
+    top:140px;
+    left:57%;
+    font-size:24px;
+}
+.menu-select>li{
+    margin-right:25px;
+}
+.menu-select>li>a{
+    color:#000;
+}
+.menu-select>li>a:hover{
+    color:#c00;
+}
+.about-amg-content{
+    display: none;
+    width:476px;
+    position: absolute;
+    top:288px;
+    right:18%;
+}
+.aic-p1{
+    font: normal 400 35px/1.89 "SimSun",serif;
+    margin-bottom:30px;
+}
+.active{
+    display: block !important;
+}
+.changecolor{
+    display: block !important;
+    border-bottom:3px solid #c00;
+}
+/* img故事 */
+.img-right{
+    display:block;
+    float: right;
+}
+.amg-story{
+    position: relative;
+}
+.about-amg-gy{
+    width:476px;
+    position: absolute;
+    top:200px;
+    right:543px;
+}
+.about-amg-contents{
+    color:#fff;
+}
+.amg-orgin{
+    position: relative;
+    height:600px;
+}
+.menu-select2{
+    position: absolute;
+    display:flex;
+    top:140px;
+    left:10%;
+    font-size:24px;
+}
+.menu-select2>li{
+    margin-right:25px;
+}
+.menu-select2 a{
+    text-decoration: none;
+    color:#000;
+}
+.menu-select2 a:hover{
+    color:#c00;
+}
+.about-orgin-txt{
+    top:238px;
+    left:10%;
+    width:476px;
+    position: absolute;
+    display: none;
+}
+/* 体验img */
+.video-main{
+    position: relative;
+}
+.main-vido{
+    display:block;
+    width:100%;
+}
+.video-main-img{
+    width:100%;
+    position: absolute;;
+    top:0;
+}
+/*amg赛车活动*/
+.racing-header{
+    width:100%;
+    background: #000;
+}
+.racing-header>p{
+    width:620px;
+    text-align: center;
+    margin: 0 auto;
+    color:#fff;
+    padding-bottom:50px;
+}
+.racing-vido{
+    position:relative;
+}
+/*amg驾驶学院*/
+#school-vido{
+    position: relative;
+}
+.wechat-bg{
+    background:#000;
+}
+.wechat-amg{
+    width: 213px;
+    height: 213px;
+    margin:0 auto;
+    display: block;
+    margin-top:-100px;
+}
+
+/*AMG新闻*/
+.amg-new-body{
+    width:940px;
+    margin:0 auto;
+}
+.AMG-NEW{
+    height:400px;
+    width:100%;
+    display:block;
+}
+.recent-news{
+    position: relative;
+}
+.recent-news-content{
+    position: absolute;
+    left:5%;
+    top:31%;
+    color:#fff;
+    width:245px;
+    height:180px;
+    
+}
+.recent-news-content>p{
+    font: normal 400 36px/1.03 "SimSun",serif;
+    margin-bottom:20px;
+}
+.more-less{
+    display:block;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #c00;
+    text-align: center;
+    border-radius: 2px;
+}
+.amg-news{
+    display: flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-bottom:70px;
+}
+.amg-new-img{
+    width:300px;
+    height:180px;
+}
+.amg-news-txt{
+    margin-top:20px;
+}
+.amg-news-txt>p{
+    color:#aaa;
+    font:normal 400 14px/1.32 "SimSun",serif;
+    text-shadow:1px 1px 8px #0aa1ed;
+    margin-bottom:25px;
+}
+.amg-news-txt>a{
+    font:normal 400 18px/1.32 "SimSun",serif;
+}
+
