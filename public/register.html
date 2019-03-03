@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://127.0.0.1:3000/main.css">
+    <link rel="stylesheet" href="http://127.0.0.1:3000/register.css">
+    <script src='http://127.0.0.1:3000/jquery-1.11.3.js'></script>
+</head>
+<body>
+    <header id='header'></header>
+    <section>
+        <div class='wrapper'>
+            <form action="" class='wrapper-inner' name='tijiao' method='post'>
+                <div class='line'>
+                    <h3>
+                        <span>注册</span>
+                    </h3>
+                </div>
+                <div>
+                    <input type="text" placeholder='用户名' class='user' name='uname'  id='text1'>
+                    <span class='tian'></span>
+                </div>
+                <div>
+                    <input type="passworld" placeholder='密码' class='user' id='text2' name='upwd'>
+                    <span class='tian'></span>
+                </div>
+                <div>
+                    <input type="text" placeholder='手机号'  class='user' id='text4' name='phone'>
+                    <span class='tian'></span>
+                </div>
+                <div class='check'>
+                    <input type="checkbox" class='check-agree'>
+                    <span>我已阅读并同意相关</span>
+                    <a href="javascript:;" class='ex'>条款</a>
+                </div>
+                <div>
+					<a href="javascript:;" data-toggle="reg" class='reg-btn'>注册</a>
+                </div>
+                <div>
+                    <img src="http://127.0.0.1:3000/bz-logo.png" alt="" class='reg-logo'>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer id='foote'></footer>
+    <script src="http://127.0.0.1:3000/head.js"></script>
+    <script>
+            (function(){
+				// 获取用户名和密码和邮箱和手机号的input
+				var uname=document.getElementsByName('uname')[0];
+				//console.log(uname);
+                var upwd=document.getElementsByName('upwd')[0];
+				var phone=document.getElementsByName('phone')[0];
+				//获得注册按钮
+				var btns = document.querySelector("[data-toggle='reg']");
+				// 获取显示文本
+				var  text=document.querySelectorAll('.tian');
+				 // 定义用于验证的变量
+                 var rname = null;
+                 var rpwd = null;
+      			 var rphone = null;
+                //用户名事件
+               
+                function  f1(){
+				    uname.addEventListener("blur",function(){
+					if(uname.value==""){
+						text[0].innerHTML = "昵称必填"
+					}else {
+						var reg=/^([A-Za-z0-9]|[\u4e00-\u9fa5]){3,8}$/
+						if(reg.test(uname.value)){
+							var xhr = new XMLHttpRequest();
+							xhr.onreadystatechange = function() {
+								if(xhr.readyState == 4&& xhr.status == 200){
+									var result = xhr.responseText;
+									result = JSON.parse(result);
+									if(result.code == -1 ){
+										text[0].innerHTML = "该用户名可用"
+										text[0].style.color='green'
+										rname=true;	
+									}else{
+										text[0].innerHTML = "已有该用户名";
+										
+									}
+								}
+							}
+							xhr.open('get','/user/queryregister?uname='+uname.value,true);
+							xhr.send(null);					
+						}else {
+						text[0].innerHTML = "该用户名不可用";
+						text[0].style.color='red';
+						}
+
+					}
+				});
+				}
+				f1();
+				function f2(){
+					//密码事件
+					upwd.addEventListener("blur",function(){
+						if(upwd.value==""){
+							text[1].innerHTML = "密码必填"
+						}else {
+							var reg=/^([A-Za-z0-9]){6,15}$/
+							if(reg.test(upwd.value)){
+							text[1].style.color  = "green";
+							text[1].innerHTML = "密码格式正确";
+							rpwd=true;
+							}else {
+							text[1].innerHTML = "密码格式不正确";
+							}
+						}
+					});
+				}
+				f2()
+				function f3(){
+					//手机号事件
+					phone.addEventListener("blur",function(){
+						if(phone.value==""){
+							text[2].innerHTML = "手机号必填";
+						}else {
+							var reg=/^1[3-8]\d{9}$/
+							if(reg.test(phone.value)){
+							text[2].style.color  = "green";
+							text[2].innerHTML = "手机号格式正确";
+							rphone=true;
+							}else {
+							text[2].innerHTML = "手机号格式不正确";
+							}
+						}
+					});	
+				}
+				f3()
+				// 点击注册后触发该事件
+				
+				btns.addEventListener('click',function(){
+
+					 if(rname==true && rpwd == true&& rphone == true){
+						
+					// 跳转到登陆界面
+						var xhr = new XMLHttpRequest();
+						xhr.onreadystatechange = function() {
+							if(xhr.readyState == 4&& xhr.status == 200){
+							var result = xhr.responseText;
+							result = JSON.parse(result);
+							console.log(result)
+							if(result.code == 1 ){
+									location.href = "http://127.0.0.1:3000/login.html";
+									
+								}else{
+									alert('注册失败')
+								}
+							}
+						}
+						xhr.open('post','/user/register',true);
+						var data = 'uname='+uname.value+'&upwd='+upwd.value+'&phone='+phone.value;
+						xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+						xhr.send(data);
+					}else{
+						alert("shibai")
+					} 
+				});
+
+			})()
+			
+
+    </script>
+</body>
+</html>

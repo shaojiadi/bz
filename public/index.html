@@ -1,0 +1,350 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> Boye </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+		<meta charset="utf-8"/>
+        <style type="text/css"></style>
+        <link rel="stylesheet" href="http://127.0.0.1:3000/main.css">
+        <link rel="stylesheet" href="http://127.0.0.1:3000/index.css">
+        <script src='http://127.0.0.1:3000/jquery-1.11.3.js'></script>
+    </head>
+	<body>
+        <header id="header"></header>
+        <section>
+            <div data-toggle=lunbo>
+            </div>
+            <!-- 购物车工 -->
+            <div>
+                <div class='line'>
+                    <h3>
+                        <span>购车工具</span>
+                    </h3>
+                </div>
+                <div class='car-tool'>
+                    <div class='car-d1'>
+                        <img src="http://127.0.0.1:3000/定位.png" alt="">
+                        <p> <a href="#"> 查找经销商</a></p>
+                    </div>
+                    <div class='car-d2'>
+                        <img src="http://127.0.0.1:3000/汽车.png" alt="">
+                        <p> <a href="#">车型比较</a></p>
+                    </div>
+                    <div class='car-d3'>
+                        <img src="http://127.0.0.1:3000/方向盘.png" alt="">
+                        <p> <a href="#">预约试驾</a></p>
+                    </div>
+                    <div class='car-d3'>
+                        <img src="http://127.0.0.1:3000/购物车.png" alt="">
+                        <p> <a href="#">在线购车</a></p>
+                    </div>
+                </div>
+            </div>
+          <!--全部车型-->
+            <div>
+                <div class='line'>
+                    <h3>
+                        <span>全部车型</span>
+                    </h3>
+                </div>
+                <div class='type'>
+                    <img src="http://127.0.0.1:3000/2.jpg" alt="">
+                    <ul>
+                        <li class='typeli'>
+                            <div class='typeone'>
+                                <img src="http://127.0.0.1:3000/箭头.png" alt="">
+                                <a href="#"><span class='typeone'>轿车</span></a> 
+                            </div>
+                        </li>
+                        <li class='typeli'> 
+                            <div>
+                                <img src="http://127.0.0.1:3000/箭头.png" alt="">
+                                <a href="#"><span class='typeone'>SUV</span></a>
+                            </div>
+                        </li >
+                        <li class='typeli'>
+                            <div id='type-d3'>
+                                <img src="http://127.0.0.1:3000/箭头.png" alt="">
+                                <a href="#"><p>轿跑车&敞篷跑车</p></a>
+                            </div>
+                        </li>
+                        <li class='typeli'>
+                            <div>
+                                <img src="http://127.0.0.1:3000/箭头.png" alt="">
+                                <a href="#"><span class='typeone'>MPV</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 更多发现 -->
+            <div>
+                <div class='line'>
+                    <h3>
+                        <span>发现更多</span>
+                    </h3>
+                </div>
+                <div class='promo-panel'>
+                    <div class='promo-panel-to' id='findMore'>
+                        <img src="http://127.0.0.1:3000/more-one.jpg" alt="" class='promo-image'>
+                        <div class='by-car-menu'>
+                            <p class='by-car-p1'>购车新方案</p>
+                            <div class='by-car-d1'>
+                                <p class='by-car-p2'>多种优享方案,</p>
+                                <p>祝你轻松获得一辆梅赛德斯-奔驰</p>
+                                <p class='by-car-p4'>
+                                    <a href="" id='know'>> 了解更多</a> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class='promo-panel-to2'></div>
+                    </div>
+                </div>
+                <div class='promo-panels'>
+                    <div class='promo-panel-to'>
+                        <div class='genden'>
+                            <img src="http://127.0.0.1:3000/xianglei.jpg" alt="" class='promo-image2'>
+                            <div class='gendenText'>
+                                <p class='by-car-p1'>加入She's Merceds</p>
+                                <div class='genden-text-d2'>
+                                    <p class='by-car-p2'>发出您的声音,唤醒女性力量</p>
+                                    <p class='by-car-p4'>
+                                        <a href="" id='know'>> 了解更多</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='promo-panel-to3'></div>
+                        </div>
+                        <!--星友荟-->
+                        <div class='star'>
+                            <img src="http://127.0.0.1:3000/星友荟1.jpg" alt="" class='promo-image3'>
+                            <div class='start-text'>
+                                <p class='by-car-p1'>星友荟</p>
+                                <div class='start-text-d2'>
+                                    <p class='by-car-p2'>尽情表达自我、分享观点、结识新友的星徽社群。</p>
+                                    <p class='by-car-p4'>
+                                        <a href="" id='know'>> 了解更多</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='promo-panel-to4'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--奔驰新闻-->
+            <div>
+                <div class='bz_news'>
+                    <h3>奔驰新闻</h3>
+                </div>
+                    <!--导航条-->
+                    <div class='bz_news_head'>
+                        <ul class='bz_news_nav'>
+                            <li><a href="javascript:;" data-toggle="tab" data-target="#content1" class='biaoti'>全部新闻</a></li>
+                            <li class='bz_news_nitem'><a href="javascript:;" data-toggle='tab'  data-target='#content2' class='biaoti'>产品资讯</a></li>
+                            <li class='bz_news_nitem'><a href="javascript:;"  data-toggle="tab" data-target="#content3" class='biaoti'>企业社会责任</a></li>
+                            <li class='bz_news_nitem'><a href="javascript:;" data-toggle="tab" data-target="#content4" class='biaoti'>客户服务与体验</a></li>
+                        </ul>
+                    </div>
+                    <div id='container'>
+                        <div class='bz_news_catainer active' id='content1'>
+                            <div class='bz_news_body'>
+                                <p>2018年12月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/news20181226.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">11月23日</a>
+                                            <a href="" class='bz_new-detail'>产品咨询</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>这才是新生代豪华轿车该有的样子！</p>
+                                        <p class='bz_news-txt2'>全新梅赛德斯-奔驰长轴距A级轿车潮流上市</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/news20181118.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">11月18日</a>
+                                            <a href="" class='bz_new-detail'>其他</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>梅赛德斯-AMG出战第65届澳门格兰披治大赛车暨第四届国际汽联GT世界杯</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-AMG出战第65届澳门格兰披治大赛车暨第四届国际汽联GT世界杯</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/news1116.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">11月16日</a>
+                                            <a href="" class='bz_new-detail'>产品咨询</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>星耀珠江 成就非凡</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰携多款重磅车型亮相2018广州国际汽车展览会</p>
+                                    </li>
+                                </ul>
+                                <p>2018年10月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/newsbanner1.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">10月27日</a>
+                                            <a href="" class='bz_new-details'>企业品牌与发展</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>创新不止 智领未来</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰携手《麻省理工科技评论》“全球科技青年论坛”共话科技浪潮</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/newbanner2.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">10月17日</a>
+                                            <a href="" class='bz_new-detail'>产品资讯</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>驰骋天地，敢为英雄</p>
+                                        <p class='bz_news-txt2'>新梅赛德斯-奔驰长轴距GLC SUV中国上市盛典暨2018“天地即征途”梅赛德斯-奔驰SUV征服之旅豪情启程</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/newsbanner3.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">10月2日</a>
+                                            <a href="" class='bz_new-detail'>产品咨询</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>星华秋实 闪耀浪漫之都</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰携5款全球首发车型震撼亮相2018巴黎车展</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--产品资讯-->
+                        <div class='bz_news_catainer' id='content2'>
+                            <div class='bz_news_body'>
+                                <p>2018年12月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/news20181226.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">11月23日</a>
+                                            <a href="" class='bz_new-detail'>产品咨询</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>这才是新生代豪华轿车该有的样子！</p>
+                                        <p class='bz_news-txt2'>全新梅赛德斯-奔驰长轴距A级轿车潮流上市</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/news1116.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">11月16日</a>
+                                            <a href="" class='bz_new-detail'>产品咨询</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>星耀珠江 成就非凡</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰携多款重磅车型亮相2018广州国际汽车展览会</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/banner.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">11月2日</a>
+                                            <a href="" class='bz_new-detail'>产品咨询</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>星华秋实 闪耀浪漫之都</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰携5款全球首发车型震撼亮相2018巴黎车展</p>
+                                    </li>
+                                </ul>
+                                <p>2018年8月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/news-banner20180831.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">8月31日</a>
+                                            <a href="" class='bz_new-details'>产品资讯</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>星徽耀动 燃情蓉城</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰携多款重磅车型耀目亮相2018成都国际汽车展览会</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/03.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">8月8日</a>
+                                            <a href="" class='bz_new-detail'>产品资讯</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>任时光荏苒 唯传奇永恒</p>
+                                        <p class='bz_news-txt2'>全新梅赛德斯-奔驰G级越野车中国上市盛典耀世启幕</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--企业社会与责任-->
+                        <div class='bz_news_catainer2' id='content3'>
+                            <div class='bz_news_body'>
+                                <p>2018年1月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/news-banner.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">1月29日</a>
+                                            <a href="" class='bz_new-detail'>企业社会责任</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>梅赛德斯-奔驰星愿基金与故宫博物院签署公益战略合作协议</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰星愿基金与故宫博物院签署公益战略合作协议</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--客户服务与体验-->
+                        <div class='bz_news_catainer' id='content4'>
+                            <div class='bz_news_body'>
+                                <p>2018年9月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/newsbanner5.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">9月26日</a>
+                                            <a href="" class='bz_new-detail'>客户服务与体验</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>一脉相承，预鉴未来</p>
+                                        <p class='bz_news-txt2'>梅赛德斯-奔驰“2020网络升级计划”首家经销店深圳焕新启幕</p>
+                                    </li>
+                                    <li class='bz_news_li2'>
+                                        <img src="http://127.0.0.1:3000/0918news-banner.jpg" alt="" class='bz_news_pc'>
+                                            <p class='bz_news-txt'>
+                                            <a href="">9月17日</a>
+                                            <a href="" class='bz_new-detail'>客户服务与体验</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>致我所向，想你所想 </p>
+                                        <p class='bz_news-txt2'>2018梅赛德斯-奔驰车主体验营活动圆满收官</p>
+                                    </li>
+                                </ul>
+                                <p>2018年7月</p>
+                                <ul class='bz_news_item'>
+                                    <li>
+                                        <img src="http://127.0.0.1:3000/news-banner-20170701.jpg" alt="" class='bz_news_pc'>
+                                        <p class='bz_news-txt'>
+                                            <a href="">7月1日</a>
+                                            <a href="" class='bz_new-details'>客户服务与体验</a>
+                                        </p>
+                                        <p class='bz_news-txt1'>坐而思不如闻而行 客户体验是衡量服务的标准</p>
+                                        <p class='bz_news-txt2'>2017梅赛德斯-奔驰车主体验营活动缤纷开营</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 预约试驾-->
+            <div class='make-drive'>
+                <img src="http://127.0.0.1:3000/feature1 (2).jpg" alt="">
+                <div class='make-drive-sections'>
+                    <p class='make-drive-p'>预约试驾</p>
+                    <p class='make-drive-p2'>亲身体验梅塞德斯-奔驰的魅力</p>
+                    <a href="">> 开始</a>
+                </div>
+            </div>
+            <!-- 分享到 -->
+            <div class='enjoy-m'>
+                <a href="http://127//weixin.qq.com/" class='enjoy-section'><img src="http://127.0.0.1:3000/微信.png" alt=""></a> 
+                <a href="https://weibo.com/" class='enjoy-section'><img src="http://127.0.0.1:3000/微博.png" alt=""></a>
+                <span class='enjoy-section'>分享到</span> 
+            </div>
+        </section>
+        <footer id='foote'></footer>
+        <script src='http://127.0.0.1:3000/head.js'></script>
+        <script src='http://127.0.0.1:3000/index.js'></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> Boye </title>
+    	<meta charset="utf-8"/>
+		<link rel="stylesheet" href="http://127.0.0.1:3000/login.css">
+		<link rel="stylesheet" href="http://127.0.0.1:3000/main.css">
+		<script src='http://127.0.0.1:3000/jquery-1.11.3.js'></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<section>
+			<form action="" class='wrapper-inner' name='tijiao' method='get' >
+				<div class='wrapper'>
+					<div id='wrapper-inner'>
+						<div class='line'>
+							<h3>
+								<span>登陆</span>
+							</h3>
+						</div>
+						<div>
+							<input type="text" placeholder='请输入用户名' class='user' name='uname' onblur='checkname()' id='text1'>
+							<span id='s1' class='tian'></span>
+						</div>
+						<div class='pwd'>
+							<input type="password" placeholder='请输入密码' class='user' onblur='checkpassword()' id='text2'>
+							<span id='s2' class='tian'></span>
+						</div>
+						<div class='txt'>
+							<input type="checkbox" class='remember-pwd'>
+							<span>记住密码</span>
+							<a href='' class='forget-pwd'>忘记密码?</a>
+						</div>
+						<div class='pwd'>
+							<input type="submit" value='登录' class='login' data-a="a">
+							<!-- <a href="javascript:;"  data-a='a' class='login'>登录</a> -->
+						</div>
+						<div>
+							<img src="http://127.0.0.1:3000/timg.jpg" alt="" class='logo'>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>	
+		<footer id='foote'></footer>
+		<script src="http://127.0.0.1:3000/head.js"></script>
+		<script src='http://127.0.0.1:3000/login.js'></script>
+		<script>
+			var a=document.querySelector("[data-a='a']");
+				a.addEventListener('click',function(){
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState == 4&&xhr.status == 200){
+						var result=xhr.responseText;
+						//console.log(result);
+						result=JSON.parse(result);
+						//console.log(result)
+						if(result.code==1){ 
+							location.href='http://127.0.0.1:3000/index.html';
+							localStorage.setItem('uid',result.data[0].user_id);
+							localStorage.setItem('uname',result.data[0].uname);
+						}else{
+							alert('登录失败 用户名密码错误')
+						}
+					}
+				}
+				xhr.open('get','/user/login?uname='+text1.value+'&upwd='+text2.value,true);
+				xhr.send(null);
+    		})
+    
+		</script>
+	</body>
+</html>
+ 
